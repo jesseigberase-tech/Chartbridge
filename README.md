@@ -13,7 +13,11 @@ Given only an appointment, the agent:
 
 All patient data is synthetic.
 
-## Run it
+## Online version (no install, no API key)
+
+`online/chartbridge-online.html` is the same app as one web page, published as a claude.ai artifact. It runs the same tools, citation checker, completeness check and prompt-injection scan in the browser (`online/backend.js`), and reaches Claude through the viewer's own claude.ai account instead of an API key. Claude decides which records to open and calls the page's tools; the page enforces the guardrails. The online version adds **Ask ChartBridge** (questions about a patient answered only from their records, with every citation checked by the same code as the brief; unverifiable citations are removed) and an **Audit log** panel (`online/extras.js`). Rebuild it after changing `web/`, `data/` or the agent prompt with `python online/build.py`.
+
+## Run it locally
 
 You need Python 3.10+ and an Anthropic API key.
 
