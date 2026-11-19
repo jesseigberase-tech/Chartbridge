@@ -1,0 +1,14 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {"resource": {"resourceType": "Patient", "id": "pat-003", "name": [{"family": "Sharma", "given": ["Priya"]}], "birthDate": "1974-11-23", "gender": "female", "identifier": [{"system": "urn:demo:health-card", "value": "DEMO-0003"}]}},
+    {"resource": {"resourceType": "Condition", "id": "cond-1", "code": {"text": "Primary hypothyroidism"}, "clinicalStatus": {"text": "active"}, "onsetDateTime": "2017-02-14"}},
+    {"resource": {"resourceType": "Condition", "id": "cond-2", "code": {"text": "Iron deficiency (history)"}, "clinicalStatus": {"text": "resolved"}, "onsetDateTime": "2021-08-01"}},
+    {"resource": {"resourceType": "AllergyIntolerance", "id": "alg-1", "code": {"text": "Codeine"}, "reaction": [{"manifestation": [{"text": "Nausea and vomiting"}]}], "recordedDate": "2015-03-03"}},
+    {"resource": {"resourceType": "MedicationStatement", "id": "ms-1", "status": "active", "medicationCodeableConcept": {"text": "Levothyroxine 100 mcg tablet"}, "dosage": [{"text": "100 mcg by mouth once daily before breakfast"}], "effectiveDateTime": "2023-05-10"}},
+    {"resource": {"resourceType": "MedicationStatement", "id": "ms-2", "status": "active", "medicationCodeableConcept": {"text": "Ferrous fumarate 300 mg tablet"}, "dosage": [{"text": "300 mg by mouth daily"}], "effectiveDateTime": "2021-08-15"}},
+    {"resource": {"resourceType": "Observation", "id": "obs-1", "code": {"text": "TSH"}, "valueQuantity": {"value": 3.1, "unit": "mIU/L"}, "effectiveDateTime": "2026-01-12"}},
+    {"resource": {"resourceType": "Observation", "id": "obs-2", "code": {"text": "Ferritin"}, "valueQuantity": {"value": 64, "unit": "ug/L"}, "effectiveDateTime": "2026-01-12"}}
+  ]
+}

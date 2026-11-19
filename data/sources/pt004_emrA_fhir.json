@@ -1,0 +1,15 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {"resource": {"resourceType": "Patient", "id": "pat-004", "name": [{"family": "Thibodeau", "given": ["Robert"]}], "birthDate": "1968-04-09", "gender": "male", "identifier": [{"system": "urn:demo:health-card", "value": "DEMO-0004"}]}},
+    {"resource": {"resourceType": "Condition", "id": "cond-1", "code": {"text": "Essential hypertension"}, "clinicalStatus": {"text": "active"}, "onsetDateTime": "2018-03-12"}},
+    {"resource": {"resourceType": "Condition", "id": "cond-2", "code": {"text": "Gout"}, "clinicalStatus": {"text": "active"}, "onsetDateTime": "2021-07-30"}},
+    {"resource": {"resourceType": "AllergyIntolerance", "id": "alg-1", "code": {"text": "No known drug allergies"}, "recordedDate": "2018-03-12"}},
+    {"resource": {"resourceType": "MedicationStatement", "id": "ms-1", "status": "active", "medicationCodeableConcept": {"text": "Amlodipine 5 mg tablet"}, "dosage": [{"text": "5 mg by mouth once daily"}], "effectiveDateTime": "2018-03-20"}},
+    {"resource": {"resourceType": "MedicationStatement", "id": "ms-2", "status": "active", "medicationCodeableConcept": {"text": "Allopurinol 300 mg tablet"}, "dosage": [{"text": "300 mg by mouth once daily"}], "effectiveDateTime": "2021-09-02"}},
+    {"resource": {"resourceType": "Observation", "id": "obs-1", "code": {"text": "Blood pressure"}, "valueString": "132/82 mmHg", "effectiveDateTime": "2025-11-14"}},
+    {"resource": {"resourceType": "Observation", "id": "obs-2", "code": {"text": "ALT"}, "valueQuantity": {"value": 31, "unit": "U/L"}, "effectiveDateTime": "2025-11-14"}},
+    {"resource": {"resourceType": "Observation", "id": "obs-3", "code": {"text": "Alcohol use"}, "valueString": "About 6 drinks per week", "effectiveDateTime": "2025-11-14"}}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {"resource": {"resourceType": "Patient", "id": "pat-001", "name": [{"family": "Doucette", "given": ["Margaret"]}], "birthDate": "1959-03-14", "gender": "female", "identifier": [{"system": "urn:demo:health-card", "value": "DEMO-0001"}]}},
+    {"resource": {"resourceType": "Condition", "id": "cond-1", "code": {"text": "Type 2 diabetes mellitus"}, "clinicalStatus": {"text": "active"}, "onsetDateTime": "2014-05-02"}},
+    {"resource": {"resourceType": "Condition", "id": "cond-2", "code": {"text": "Essential hypertension"}, "clinicalStatus": {"text": "active"}, "onsetDateTime": "2016-09-19"}},
+    {"resource": {"resourceType": "AllergyIntolerance", "id": "alg-1", "code": {"text": "Penicillin"}, "reaction": [{"manifestation": [{"text": "Hives"}]}], "recordedDate": "2011-02-10"}},
+    {"resource": {"resourceType": "MedicationStatement", "id": "ms-1", "status": "active", "medicationCodeableConcept": {"text": "Metformin 1000 mg tablet"}, "dosage": [{"text": "1000 mg by mouth twice daily"}], "effectiveDateTime": "2019-01-15"}},
+    {"resource": {"resourceType": "MedicationStatement", "id": "ms-2", "status": "active", "medicationCodeableConcept": {"text": "Lisinopril 10 mg tablet"}, "dosage": [{"text": "10 mg by mouth once daily"}], "effectiveDateTime": "2016-10-01"}},
+    {"resource": {"resourceType": "MedicationStatement", "id": "ms-3", "status": "active", "medicationCodeableConcept": {"text": "Atorvastatin 20 mg tablet"}, "dosage": [{"text": "20 mg by mouth at bedtime"}], "effectiveDateTime": "2018-04-11"}},
+    {"resource": {"resourceType": "Observation", "id": "obs-1", "code": {"text": "eGFR"}, "valueQuantity": {"value": 58, "unit": "mL/min/1.73m2"}, "effectiveDateTime": "2026-02-03"}},
+    {"resource": {"resourceType": "Observation", "id": "obs-2", "code": {"text": "Hemoglobin A1c"}, "valueQuantity": {"value": 7.4, "unit": "%"}, "effectiveDateTime": "2026-02-03"}},
+    {"resource": {"resourceType": "Observation", "id": "obs-3", "code": {"text": "Blood pressure"}, "valueString": "148/88 mmHg", "effectiveDateTime": "2026-08-12"}},
+    {"resource": {"resourceType": "ServiceRequest", "id": "sr-1", "status": "active", "intent": "order", "code": {"text": "Referral: ophthalmology, annual diabetic retinal exam"}, "authoredOn": "2026-05-20", "note": [{"text": "No report received as of last chart update."}]}}
+  ]
+}

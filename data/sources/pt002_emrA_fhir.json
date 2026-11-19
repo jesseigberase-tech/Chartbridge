@@ -1,0 +1,12 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {"resource": {"resourceType": "Patient", "id": "pat-002", "name": [{"family": "Okafor", "given": ["Daniel"]}], "birthDate": "1992-07-02", "gender": "male", "identifier": [{"system": "urn:demo:health-card", "value": "DEMO-0002"}]}},
+    {"resource": {"resourceType": "Condition", "id": "cond-1", "code": {"text": "Asthma, mild intermittent"}, "clinicalStatus": {"text": "active"}, "onsetDateTime": "2005-06-01"}},
+    {"resource": {"resourceType": "AllergyIntolerance", "id": "alg-1", "code": {"text": "No known drug allergies"}, "recordedDate": "2019-01-08"}},
+    {"resource": {"resourceType": "MedicationStatement", "id": "ms-1", "status": "active", "medicationCodeableConcept": {"text": "Salbutamol 100 mcg inhaler"}, "dosage": [{"text": "2 puffs as needed for wheeze"}], "effectiveDateTime": "2019-01-08"}},
+    {"resource": {"resourceType": "Observation", "id": "obs-1", "code": {"text": "Spirometry"}, "valueString": "FEV1/FVC 0.78, within normal limits", "effectiveDateTime": "2019-01-08"}},
+    {"resource": {"resourceType": "Encounter", "id": "enc-1", "status": "finished", "type": [{"text": "Annual physical"}], "period": {"start": "2026-03-04"}}}
+  ]
+}

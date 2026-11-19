@@ -1,0 +1,12 @@
+{
+  "open_slots": [
+    {"slot_id": "slot-1", "start": "2026-11-20T10:00", "type": "physician", "length_min": 15},
+    {"slot_id": "slot-2", "start": "2026-11-24T14:20", "type": "physician", "length_min": 15},
+    {"slot_id": "slot-3", "start": "2026-11-27T09:00", "type": "physician", "length_min": 15},
+    {"slot_id": "slot-4", "start": "2026-12-02T11:40", "type": "physician", "length_min": 15},
+    {"slot_id": "slot-5", "start": "2026-12-16T15:00", "type": "physician", "length_min": 15},
+    {"slot_id": "slot-6", "start": "2027-01-06T09:20", "type": "physician", "length_min": 15},
+    {"slot_id": "lab-1", "start": "2026-11-19T08:00", "type": "lab_draw", "length_min": 10},
+    {"slot_id": "lab-2", "start": "2026-12-28T08:00", "type": "lab_draw", "length_min": 10}
+  ]
+}

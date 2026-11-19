@@ -1,0 +1,11 @@
+NOVA SCOTIA PROVINCIAL LAB PORTAL (synthetic demo report)
+Patient: THIBODEAU, ROBERT    DOB: 1968-04-09    HC#: DEMO-0004
+Collected: 2026-11-10    Reported: 2026-11-12
+Ordering: Dr. A. Igberase
+TEST                     RESULT    FLAG   REF RANGE
+ALT                      74        H      <50 U/L
+GGT                      156       H      <60 U/L
+Uric acid                528       H      200-430 umol/L
+Creatinine               96               60-110 umol/L
+eGFR                     79               >60 mL/min/1.73m2
+Comment: Annual bloodwork.

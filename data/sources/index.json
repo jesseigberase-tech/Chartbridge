@@ -1,0 +1,106 @@
+{
+  "pt-001": [
+    {
+      "source_id": "src-001-emrA",
+      "kind": "fhir",
+      "system": "Clinic EMR (FHIR R4 export)",
+      "description": "Family practice chart: meds, allergies, problems, labs, referrals",
+      "file": "pt001_emrA_fhir.json",
+      "last_updated": "2026-08-12"
+    },
+    {
+      "source_id": "src-001-emrB",
+      "kind": "emr_export",
+      "system": "QuickCare walk-in clinic (proprietary JSON export)",
+      "description": "Walk-in visit record from another clinic system",
+      "file": "pt001_emrB_walkin.json",
+      "last_updated": "2026-09-27"
+    },
+    {
+      "source_id": "src-001-fax",
+      "kind": "document",
+      "system": "Faxed letter (OCR text)",
+      "description": "Cardiology consult letter received by fax",
+      "file": "pt001_fax_cardiology.txt",
+      "last_updated": "2026-10-15"
+    },
+    {
+      "source_id": "src-001-lab",
+      "kind": "document",
+      "system": "Provincial lab portal (PDF text)",
+      "description": "Lab report",
+      "file": "pt001_lab_2026-11.txt",
+      "last_updated": "2026-11-06"
+    }
+  ],
+  "pt-002": [
+    {
+      "source_id": "src-002-emrA",
+      "kind": "fhir",
+      "system": "Clinic EMR (FHIR R4 export)",
+      "description": "Family practice chart",
+      "file": "pt002_emrA_fhir.json",
+      "last_updated": "2026-03-04"
+    },
+    {
+      "source_id": "src-002-emrB",
+      "kind": "emr_export",
+      "system": "Hospital ED system (proprietary JSON export)",
+      "description": "Emergency department discharge record",
+      "file": "pt002_emrB_ed.json",
+      "last_updated": "2026-11-02"
+    }
+  ],
+  "pt-003": [
+    {
+      "source_id": "src-003-emrA",
+      "kind": "fhir",
+      "system": "Clinic EMR (FHIR R4 export)",
+      "description": "Family practice chart",
+      "file": "pt003_emrA_fhir.json",
+      "last_updated": "2026-06-20"
+    },
+    {
+      "source_id": "src-003-fax",
+      "kind": "document",
+      "system": "Faxed letter (OCR text)",
+      "description": "Endocrinology consult letter received by fax",
+      "file": "pt003_fax_endo.txt",
+      "last_updated": "2026-09-30"
+    },
+    {
+      "source_id": "src-003-lab",
+      "kind": "document",
+      "system": "Provincial lab portal (PDF text)",
+      "description": "Lab report",
+      "file": "pt003_lab_2026-11.txt",
+      "last_updated": "2026-11-03"
+    }
+  ],
+  "pt-004": [
+    {
+      "source_id": "src-004-emrA",
+      "kind": "fhir",
+      "system": "Clinic EMR (FHIR R4 export)",
+      "description": "Family practice chart",
+      "file": "pt004_emrA_fhir.json",
+      "last_updated": "2025-11-14"
+    },
+    {
+      "source_id": "src-004-portal",
+      "kind": "emr_export",
+      "system": "Patient portal (pre-visit questionnaire)",
+      "description": "Patient-submitted questionnaire, self-reported and unverified",
+      "file": "pt004_portal_intake.json",
+      "last_updated": "2026-11-15"
+    },
+    {
+      "source_id": "src-004-lab",
+      "kind": "document",
+      "system": "Provincial lab portal (PDF text)",
+      "description": "Lab report",
+      "file": "pt004_lab_2026-11.txt",
+      "last_updated": "2026-11-12"
+    }
+  ]
+}

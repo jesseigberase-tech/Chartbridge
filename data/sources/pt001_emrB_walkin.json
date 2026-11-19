@@ -1,0 +1,16 @@
+{
+  "export_format": "QuickCare-v3",
+  "client": {"surname": "DOUCETTE", "first": "MARGARET", "date_of_birth": "14/03/1959", "hc_number": "DEMO-0001"},
+  "visit": {
+    "date": "2026-09-27",
+    "provider": "Walk-in physician (QuickCare)",
+    "complaint": "Dry cough for 6 weeks",
+    "assessment_note": "Persistent dry cough, likely ACE-inhibitor related. Lisinopril discontinued. Started losartan 50 mg daily. Patient advised to inform family doctor.",
+    "bp": "142/86"
+  },
+  "rx_changes": [
+    {"drug": "LISINOPRIL 10MG", "action": "DISCONTINUE", "date": "2026-09-27"},
+    {"drug": "LOSARTAN 50MG", "action": "START", "sig": "1 tab PO daily", "date": "2026-09-27", "qty": 30, "refills": 2}
+  ],
+  "allergy_list": ["PENICILLIN"]
+}

@@ -1,0 +1,19 @@
+{
+  "export_format": "HospitalED-DischargeSummary-2.1",
+  "patient": {"name": "OKAFOR, DANIEL", "dob": "1992-07-02", "hcn": "DEMO-0002"},
+  "encounter": {
+    "arrived": "2026-11-01T22:40",
+    "discharged": "2026-11-02T04:15",
+    "chief_complaint": "Shortness of breath, wheeze",
+    "summary": "Moderate asthma exacerbation after viral URI. Treated with nebulized salbutamol x3 and oral prednisone. Peak flow improved from 52% to 81% predicted.",
+    "triggers_reported": ["recent cold", "new apartment with carpet and cat"],
+    "rescue_inhaler_use_reported": "using salbutamol 4-5 times per day for 2 weeks"
+  },
+  "discharge_medications": [
+    {"name": "Prednisone 40 mg", "instructions": "once daily x 5 days", "new": true},
+    {"name": "Budesonide/formoterol 200/6 inhaler", "instructions": "1 puff twice daily", "new": true},
+    {"name": "Salbutamol 100 mcg inhaler", "instructions": "as needed", "new": false}
+  ],
+  "allergies_adverse_reactions": [{"agent": "Ibuprofen", "reaction": "wheeze/chest tightness", "reported_by": "patient"}],
+  "follow_up": "See family physician within 1 week. Consider repeat spirometry."
+}

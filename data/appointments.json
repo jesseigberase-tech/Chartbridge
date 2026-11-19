@@ -1,0 +1,43 @@
+{
+  "clinic": "Harbourview Family Practice (synthetic demo clinic)",
+  "physician": "Dr. A. Igberase",
+  "date": "2026-11-18",
+  "appointments": [
+    {
+      "appointment_id": "appt-101",
+      "time": "09:00",
+      "patient_id": "pt-001",
+      "patient_name": "Margaret Doucette",
+      "dob": "1959-03-14",
+      "reason": "Diabetes and blood pressure follow-up",
+      "length_min": 15
+    },
+    {
+      "appointment_id": "appt-102",
+      "time": "09:20",
+      "patient_id": "pt-002",
+      "patient_name": "Daniel Okafor",
+      "dob": "1992-07-02",
+      "reason": "Follow-up after emergency visit for asthma",
+      "length_min": 15
+    },
+    {
+      "appointment_id": "appt-103",
+      "time": "09:40",
+      "patient_id": "pt-003",
+      "patient_name": "Priya Sharma",
+      "dob": "1974-11-23",
+      "reason": "Fatigue, thyroid medication review",
+      "length_min": 15
+    },
+    {
+      "appointment_id": "appt-104",
+      "time": "10:00",
+      "patient_id": "pt-004",
+      "patient_name": "Robert Thibodeau",
+      "dob": "1968-04-09",
+      "reason": "Annual check-up, new back pain",
+      "length_min": 15
+    }
+  ]
+}

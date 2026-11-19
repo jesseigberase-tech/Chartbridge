@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ChartBridge</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true"><path d="M4 22c4-10 8-10 12 0s8 10 12 0" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="4" cy="22" r="2.6" fill="currentColor"/><circle cx="28" cy="22" r="2.6" fill="currentColor"/></svg>
+    <span>ChartBridge</span>
+  </div>
+  <div class="meta" id="meta"></div>
+  <div class="pills">
+    <span class="pill synthetic">Synthetic data only</span>
+    <span class="pill" id="modelPill">…</span>
+  </div>
+</header>
+
+<main class="layout">
+  <aside class="schedule">
+    <div class="section-head">
+      <h2>Today's patients</h2>
+      <button class="ghost small" id="resetBtn" title="Clear briefs, actions and outbox">Reset demo</button>
+    </div>
+    <ol id="appts" class="appts"></ol>
+    <button class="primary wide" id="prepAllBtn" title="Prepare every patient without a brief, one after another">Prepare all briefs</button>
+    <div class="outbox-wrap">
+      <h3>Outbox <span class="muted">(demo, nothing is really sent)</span></h3>
+      <ul id="outbox" class="outbox"><li class="muted">Empty</li></ul>
+    </div>
+  </aside>
+
+  <section class="workspace" id="workspace">
+    <div class="empty" id="emptyState">
+      <h1>Walk into every visit already caught up.</h1>
+      <p>Pick a patient. The agent opens every record it can find across systems, reconciles them, checks each claim against its source, and hands you a one-page brief. You approve anything it wants to do next.</p>
+    </div>
+
+    <div id="patientView" hidden>
+      <div class="patient-head">
+        <div>
+          <div class="when" id="pTime"></div>
+          <h1 id="pName"></h1>
+          <div class="sub" id="pSub"></div>
+        </div>
+        <div class="run-buttons">
+          <button class="primary" id="prepBtn">Prepare chart</button>
+          <button class="ghost" id="replayBtn" title="Replay a recorded real run (for offline demos)">Replay recorded run</button>
+          <button class="ghost" id="printBtn" hidden title="Print or save the brief as PDF">Print</button>
+        </div>
+      </div>
+
+      <details class="activity" id="activity">
+        <summary><span class="dot" id="actDot"></span><span id="actTitle">Agent activity</span><span class="muted" id="actStats"></span></summary>
+        <ol id="feed" class="feed"></ol>
+      </details>
+
+      <div id="briefArea"></div>
+    </div>
+  </section>
+</main>
+
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-head">
+    <div>
+      <div class="kicker" id="dKind"></div>
+      <h3 id="dTitle"></h3>
+    </div>
+    <button class="ghost small" id="dClose">Close</button>
+  </div>
+  <div class="drawer-body" id="dBody"></div>
+</aside>
+<div class="scrim" id="scrim"></div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

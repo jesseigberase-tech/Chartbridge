@@ -1,0 +1,9 @@
+NOVA SCOTIA PROVINCIAL LAB PORTAL (synthetic demo report)
+Patient: SHARMA, PRIYA    DOB: 1974-11-23    HC#: DEMO-0003
+Collected: 2026-11-01    Reported: 2026-11-03
+Ordering: Dr. A. Igberase
+TEST                     RESULT    FLAG   REF RANGE
+Hemoglobin               121              115-155 g/L
+Ferritin                 71               15-150 ug/L
+Vitamin B12              180       L      >220 pmol/L
+Comment: TSH not requested on this order.
